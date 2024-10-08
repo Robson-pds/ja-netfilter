@@ -16,4 +16,7 @@
 -XX:ErrorFile=$USER_HOME/java_error_in_idea_%p.log
 -XX:HeapDumpPath=$USER_HOME/java_error_in_idea.hprof
 
--javaagent:C:\ja-netfilter-all\ja-netfilter.jar=jetbrains
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+
+-javaagent:C:\JetBrains\ja-netfilter\ja-netfilter.jar=jetbrains
